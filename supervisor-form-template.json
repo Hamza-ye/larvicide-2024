@@ -1,0 +1,548 @@
+{
+    "createdBy": null,
+    "createdDate": "2024-09-18T21:43:04.617Z",
+    "lastModifiedBy": "admin",
+    "lastModifiedDate": "2024-09-18T21:43:04.639Z",
+    "uid": "spFUsaF64Jo",
+    "code": "IPBex0nDUPY",
+    "name": "استمارة الاشراف للمكافحة اليرقية",
+    "description": null,
+    "disabled": null,
+    "activity": "Xw7SDybz1Un",
+    "version": 1,
+    "defaultLocal": "ar",
+    "fields": [
+        {
+            "order": 1,
+            "name": "mainSection",
+            "description": null,
+            "type": "Section",
+            "mandatory": true,
+            "mainField": true,
+            "rules": [
+            ],
+            "listName": null,
+            "referenceInfo": null,
+            "choiceFilter": null,
+            "label": {
+                "en": "dayanddate",
+                "ar": "اليوم والتاريخ"
+            },
+            "calculation": null,
+            "defaultValue": null,
+            "section": null,
+            "path": "mainSection",
+            "fields": [
+                {
+                    "order": 1,
+                    "name": "workDate",
+                    "description": null,
+                    "type": "Date",
+                    "mandatory": true,
+                    "mainField": false,
+                    "rules": [
+                    ],
+                    "listName": null,
+                    "referenceInfo": null,
+                    "choiceFilter": null,
+                    "label": {
+                        "en": "work date",
+                        "ar": "التاريخ"
+                    },
+                    "calculation": null,
+                    "defaultValue": null,
+                    "section": "mainSection",
+                    "path": "mainSection.workDate",
+                    "fields": [
+                    ]
+                },
+                {
+                    "order": 2,
+                    "name": "workDay",
+                    "description": null,
+                    "type": "SelectOne",
+                    "mandatory": true,
+                    "mainField": false,
+                    "rules": [
+                    ],
+                    "listName": "workdays",
+                    "referenceInfo": null,
+                    "choiceFilter": null,
+                    "label": {
+                        "en": "Work Day",
+                        "ar": "اليوم"
+                    },
+                    "calculation": null,
+                    "defaultValue": null,
+                    "section": "mainSection",
+                    "path": "mainSection.workDay",
+                    "fields": [
+                    ]
+                }
+            ]
+        },
+        {
+            "order": 2,
+            "name": "teamWorkSummary",
+            "description": null,
+            "type": "RepeatableSection",
+            "mandatory": true,
+            "mainField": false,
+            "rules": [
+            ],
+            "listName": null,
+            "referenceInfo": null,
+            "choiceFilter": null,
+            "label": {
+                "en": "teamWorkSummary",
+                "ar": "خلاصة الغمل اليومي على مستوى الفريق"
+            },
+            "calculation": null,
+            "defaultValue": null,
+            "section": null,
+            "path": "teamWorkSummary",
+            "fields": [
+                {
+                    "order": 2,
+                    "name": "districts",
+                    "description": null,
+                    "type": "OrganisationUnit",
+                    "mandatory": true,
+                    "mainField": false,
+                    "rules": [
+                    ],
+                    "listName": null,
+                    "referenceInfo": null,
+                    "choiceFilter": null,
+                    "label": {
+                        "en": "districts",
+                        "ar": "المديرية"
+                    },
+                    "calculation": null,
+                    "defaultValue": null,
+                    "section": "teamWorkSummary",
+                    "path": "teamWorkSummary.districts",
+                    "fields": [
+                    ]
+                },
+                {
+                    "order": 1,
+                    "name": "teamid",
+                    "description": null,
+                    "type": "IntegerPositive",
+                    "mandatory": true,
+                    "mainField": false,
+                    "rules": [
+                    ],
+                    "listName": "",
+                    "referenceInfo": null,
+                    "choiceFilter": null,
+                    "label": {
+                        "en": "teamid",
+                        "ar": "رقم الفريق"
+                    },
+                    "calculation": null,
+                    "defaultValue": null,
+                    "section": "teamWorkSummary",
+                    "path": "teamWorkSummary.teamid",
+                    "fields": [
+                    ]
+                },
+                {
+                    "order": 3,
+                    "name": "temporarilyEliminatedBreedingSources",
+                    "description": null,
+                    "type": "IntegerZeroOrPositive",
+                    "mandatory": true,
+                    "mainField": false,
+                    "rules": [
+                    ],
+                    "listName": null,
+                    "referenceInfo": null,
+                    "choiceFilter": null,
+                    "label": {
+                        "en": "Temporarily Eliminated Breeding Sources",
+                        "ar": "عدد مصادر البعوض التي تم التخلص منها مؤقتاً"
+                    },
+                    "calculation": null,
+                    "defaultValue": null,
+                    "section": "teamWorkSummary",
+                    "path": "teamWorkSummary.temporarilyEliminatedBreedingSources",
+                    "fields": [
+                    ]
+                },
+                {
+                    "order": 4,
+                    "name": "permanentlyEliminatedBreedingSources",
+                    "description": null,
+                    "type": "IntegerZeroOrPositive",
+                    "mandatory": true,
+                    "mainField": false,
+                    "rules": [
+                    ],
+                    "listName": null,
+                    "referenceInfo": null,
+                    "choiceFilter": null,
+                    "label": {
+                        "en": "permanentlyEliminatedBreedingSources",
+                        "ar": "عدد مصادر البعوض التي تم التخلص منها بشكل دائم"
+                    },
+                    "calculation": null,
+                    "defaultValue": null,
+                    "section": "teamWorkSummary",
+                    "path": "teamWorkSummary.permanentlyEliminatedBreedingSources",
+                    "fields": [
+                    ]
+                },
+                {
+                    "order": 5,
+                    "name": "undisposedSources",
+                    "description": null,
+                    "type": "Section",
+                    "mandatory": true,
+                    "mainField": false,
+                    "rules": [
+                    ],
+                    "listName": null,
+                    "referenceInfo": null,
+                    "choiceFilter": null,
+                    "label": {
+                        "en": "undisposedSources",
+                        "ar": "عدد المصادر التي لم يتم التخلص منها"
+                    },
+                    "calculation": null,
+                    "defaultValue": null,
+                    "section": "teamWorkSummary",
+                    "path": "teamWorkSummary.undisposedSources",
+                    "fields": [
+                        {
+                            "order": 1,
+                            "name": "cumulativeNumberOfVillagesCovered",
+                            "description": null,
+                            "type": "IntegerZeroOrPositive",
+                            "mandatory": true,
+                            "mainField": false,
+                            "rules": [
+                            ],
+                            "listName": null,
+                            "referenceInfo": null,
+                            "choiceFilter": null,
+                            "label": {
+                                "en": "Number of villages covered (cumulative)",
+                                "ar": "عدد القرى التي تم تغطيتها (تراكمي)"
+                            },
+                            "calculation": null,
+                            "defaultValue": null,
+                            "section": "teamWorkSummary.undisposedSources",
+                            "path": "teamWorkSummary.undisposedSources.cumulativeNumberOfVillagesCovered",
+                            "fields": [
+                            ]
+                        },
+                        {
+                            "order": 2,
+                            "name": "cumulativeNumberOfRemainingVillages",
+                            "description": null,
+                            "type": "IntegerZeroOrPositive",
+                            "mandatory": true,
+                            "mainField": false,
+                            "rules": [
+                            ],
+                            "listName": null,
+                            "referenceInfo": null,
+                            "choiceFilter": null,
+                            "label": {
+                                "en": "Number of remaining villages (cumulative)",
+                                "ar": "عدد القرى المتبقية (تراكمي)"
+                            },
+                            "calculation": null,
+                            "defaultValue": null,
+                            "section": "teamWorkSummary.undisposedSources",
+                            "path": "teamWorkSummary.undisposedSources.cumulativeNumberOfRemainingVillages",
+                            "fields": [
+                            ]
+                        },
+                        {
+                            "order": 3,
+                            "name": "CumulativeCompletionRate",
+                            "description": null,
+                            "type": "IntegerZeroOrPositive",
+                            "mandatory": true,
+                            "mainField": false,
+                            "rules": [
+                            ],
+                            "listName": null,
+                            "referenceInfo": null,
+                            "choiceFilter": null,
+                            "label": {
+                                "en": "% Completion Rate (Cumulative)",
+                                "ar": "% نسبة الإنجاز (تراكمي)"
+                            },
+                            "calculation": null,
+                            "defaultValue": null,
+                            "section": "teamWorkSummary.undisposedSources",
+                            "path": "teamWorkSummary.undisposedSources.CumulativeCompletionRate",
+                            "fields": [
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "order": 12,
+                    "name": "sourcesRequiringHeavyEquipment",
+                    "description": null,
+                    "type": "IntegerZeroOrPositive",
+                    "mandatory": true,
+                    "mainField": false,
+                    "rules": [
+                    ],
+                    "listName": null,
+                    "referenceInfo": null,
+                    "choiceFilter": null,
+                    "label": {
+                        "en": "sources requiring heavy equipment",
+                        "ar": "عدد المصادر التي تحتاج إلى معدات ثقيلة لم يتم التخلص منها"
+                    },
+                    "calculation": null,
+                    "defaultValue": null,
+                    "section": "teamWorkSummary",
+                    "path": "teamWorkSummary.sourcesRequiringHeavyEquipment",
+                    "fields": [
+                    ]
+                },
+                {
+                    "order": 6,
+                    "name": "TotalTiresCollectedByTeam",
+                    "description": null,
+                    "type": "IntegerZeroOrPositive",
+                    "mandatory": true,
+                    "mainField": false,
+                    "rules": [
+                    ],
+                    "listName": null,
+                    "referenceInfo": null,
+                    "choiceFilter": null,
+                    "label": {
+                        "en": "TotalTiresCollectedByTeam",
+                        "ar": "إجمالي عدد الإطارات التي تم جمعها عبر الفريق"
+                    },
+                    "calculation": null,
+                    "defaultValue": null,
+                    "section": "teamWorkSummary",
+                    "path": "teamWorkSummary.TotalTiresCollectedByTeam",
+                    "fields": [
+                    ]
+                },
+                {
+                    "order": 7,
+                    "name": "NumberOfcommunityInitiativeSupportTeams",
+                    "description": null,
+                    "type": "IntegerZeroOrPositive",
+                    "mandatory": true,
+                    "mainField": false,
+                    "rules": [
+                    ],
+                    "listName": null,
+                    "referenceInfo": null,
+                    "choiceFilter": null,
+                    "label": {
+                        "en": "Number of community initiative teams supporting the team",
+                        "ar": "عدد فرق المبادرات المجتمعية المساندة للفريق"
+                    },
+                    "calculation": null,
+                    "defaultValue": null,
+                    "section": "teamWorkSummary",
+                    "path": "teamWorkSummary.NumberOfcommunityInitiativeSupportTeams",
+                    "fields": [
+                    ]
+                },
+                {
+                    "order": 8,
+                    "name": "initiativeTeamTotalMembers",
+                    "description": null,
+                    "type": "IntegerZeroOrPositive",
+                    "mandatory": true,
+                    "mainField": false,
+                    "rules": [
+                    ],
+                    "listName": null,
+                    "referenceInfo": null,
+                    "choiceFilter": null,
+                    "label": {
+                        "en": "Total number of initiative team members",
+                        "ar": "إجمالي أفراد فرق المبادرات"
+                    },
+                    "calculation": null,
+                    "defaultValue": null,
+                    "section": "teamWorkSummary",
+                    "path": "teamWorkSummary.initiativeTeamTotalMembers",
+                    "fields": [
+                    ]
+                },
+                {
+                    "order": 9,
+                    "name": "sourcesEliminatedByInitiatives",
+                    "description": null,
+                    "type": "IntegerZeroOrPositive",
+                    "mandatory": true,
+                    "mainField": false,
+                    "rules": [
+                    ],
+                    "listName": null,
+                    "referenceInfo": null,
+                    "choiceFilter": null,
+                    "label": {
+                        "en": "Number of sources eliminated through initiatives",
+                        "ar": "عدد المصادر التي تم التخلص منها عن طريق المبادرات"
+                    },
+                    "calculation": null,
+                    "defaultValue": null,
+                    "section": "teamWorkSummary",
+                    "path": "teamWorkSummary.sourcesEliminatedByInitiatives",
+                    "fields": [
+                    ]
+                },
+                {
+                    "order": 10,
+                    "name": "officialBodiesSupportingTheTeam",
+                    "description": null,
+                    "type": "Text",
+                    "mandatory": true,
+                    "mainField": false,
+                    "rules": [
+                    ],
+                    "listName": null,
+                    "referenceInfo": null,
+                    "choiceFilter": null,
+                    "label": {
+                        "en": "official Bodies Supporting The Team",
+                        "ar": "حدد أسماء الجهات الرسمية المساندة للفريق في التخلص من مصادر توالد البعوض"
+                    },
+                    "calculation": null,
+                    "defaultValue": null,
+                    "section": "teamWorkSummary",
+                    "path": "teamWorkSummary.officialBodiesSupportingTheTeam",
+                    "fields": [
+                    ]
+                },
+                {
+                    "order": 11,
+                    "name": "executiveAndLocalAuthoritiesDisposedSources",
+                    "description": null,
+                    "type": "IntegerZeroOrPositive",
+                    "mandatory": true,
+                    "mainField": false,
+                    "rules": [
+                    ],
+                    "listName": null,
+                    "referenceInfo": null,
+                    "choiceFilter": null,
+                    "label": {
+                        "en": "executive and local authorities disposed sources",
+                        "ar": "عدد المصادر تم التخلص منها عبرالمكاتب التنفيذية للسلطات المحلية في المديرية"
+                    },
+                    "calculation": null,
+                    "defaultValue": null,
+                    "section": "teamWorkSummary",
+                    "path": "teamWorkSummary.executiveAndLocalAuthoritiesDisposedSources",
+                    "fields": [
+                    ]
+                }
+            ]
+        }
+    ],
+    "options": [
+        {
+            "listName": "workdays",
+            "name": "1",
+            "order": 1,
+            "label": {
+                "en": "1",
+                "ar": "1"
+            },
+            "properties": {
+                "pcode": null,
+                "itemfilter": "",
+                "itemvalue": ""
+            }
+        },
+        {
+            "listName": "workdays",
+            "name": "2",
+            "order": 2,
+            "label": {
+                "en": "2",
+                "ar": "2"
+            },
+            "properties": {
+                "pcode": null,
+                "itemfilter": "",
+                "itemvalue": ""
+            }
+        },
+        {
+            "listName": "workdays",
+            "name": "3",
+            "order": 3,
+            "label": {
+                "en": "3",
+                "ar": "3"
+            },
+            "properties": {
+                "pcode": null,
+                "itemfilter": "",
+                "itemvalue": ""
+            }
+        },
+        {
+            "listName": "workdays",
+            "name": "4",
+            "order": 4,
+            "label": {
+                "en": "4",
+                "ar": "4"
+            },
+            "properties": {
+                "pcode": null,
+                "itemfilter": "",
+                "itemvalue": ""
+            }
+        },
+        {
+            "listName": "workdays",
+            "name": "5",
+            "order": 5,
+            "label": {
+                "en": "5",
+                "ar": "5"
+            },
+            "properties": {
+                "pcode": null,
+                "itemfilter": "",
+                "itemvalue": ""
+            }
+        },
+        {
+            "listName": "workdays",
+            "name": "6",
+            "order": 6,
+            "label": {
+                "en": "6",
+                "ar": "6"
+            },
+            "properties": {
+                "pcode": null,
+                "itemfilter": "",
+                "itemvalue": ""
+            }
+        }
+    ],
+    "orgUnits": [
+    ],
+    "label": {
+        "en": "LSMSupervision",
+        "ar": "استمارة الاشراف للمكافحة اليرقية"
+    },
+    "displayName": "استمارة الاشراف للمكافحة اليرقية",
+    "translations": [
+    ]
+}

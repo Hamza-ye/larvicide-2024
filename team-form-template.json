@@ -1,0 +1,657 @@
+{
+    "createdBy": null,
+    "createdDate": "2024-09-19T15:29:51.068Z",
+    "lastModifiedBy": "admin",
+    "lastModifiedDate": "2024-09-19T15:29:51.129Z",
+    "uid": "LyKjGFd6CSH",
+    "code": "wEATYpff02M",
+    "name": "المكافحة اليرقية-قائد الفريق",
+    "description": null,
+    "disabled": null,
+    "activity": "HZS0PfAo8kh",
+    "version": 2,
+    "defaultLocal": "en",
+    "fields": [
+        {
+            "order": 1,
+            "name": "mainSection",
+            "description": null,
+            "type": "Section",
+            "mandatory": true,
+            "mainField": true,
+            "rules": [
+            ],
+            "listName": null,
+            "referenceInfo": null,
+            "choiceFilter": null,
+            "label": {
+                "en": "mainSection",
+                "ar": "البيانات الاساسية"
+            },
+            "calculation": null,
+            "defaultValue": null,
+            "section": null,
+            "path": "mainSection",
+            "fields": [
+                {
+                    "order": 2,
+                    "name": "workday",
+                    "description": null,
+                    "type": "SelectOne",
+                    "mandatory": true,
+                    "mainField": false,
+                    "rules": [
+                    ],
+                    "listName": "workdays",
+                    "referenceInfo": null,
+                    "choiceFilter": null,
+                    "label": {
+                        "en": "workday",
+                        "ar": "اليوم"
+                    },
+                    "calculation": null,
+                    "defaultValue": null,
+                    "section": "mainSection",
+                    "path": "mainSection.workday",
+                    "fields": [
+                    ]
+                },
+                {
+                    "order": 3,
+                    "name": "workDate",
+                    "description": null,
+                    "type": "Date",
+                    "mandatory": false,
+                    "mainField": false,
+                    "rules": [
+                    ],
+                    "listName": null,
+                    "referenceInfo": null,
+                    "choiceFilter": null,
+                    "label": {
+                        "en": "work date",
+                        "ar": "التاريخ"
+                    },
+                    "calculation": null,
+                    "defaultValue": null,
+                    "section": "mainSection",
+                    "path": "mainSection.workDate",
+                    "fields": [
+                    ]
+                }
+            ]
+        },
+        {
+            "order": 1,
+            "name": "breedingSources",
+            "description": null,
+            "type": "RepeatableSection",
+            "mandatory": false,
+            "mainField": false,
+            "rules": [
+            ],
+            "listName": null,
+            "referenceInfo": null,
+            "choiceFilter": null,
+            "label": {
+                "en": "Brreding Sources",
+                "ar": "مصادر التوالد"
+            },
+            "calculation": null,
+            "defaultValue": null,
+            "section": null,
+            "path": "breedingSources",
+            "fields": [
+                {
+                    "order": 2,
+                    "name": "ownerName",
+                    "description": null,
+                    "type": "Text",
+                    "mandatory": true,
+                    "mainField": false,
+                    "rules": [
+                    ],
+                    "listName": null,
+                    "referenceInfo": null,
+                    "choiceFilter": null,
+                    "label": {
+                        "en": "owner name",
+                        "ar": "اسم صاحب الموقع"
+                    },
+                    "calculation": null,
+                    "defaultValue": null,
+                    "section": "breedingSources",
+                    "path": "breedingSources.ownerName",
+                    "fields": [
+                    ]
+                },
+                {
+                    "order": 3,
+                    "name": "brredingSourceType",
+                    "description": null,
+                    "type": "SelectOne",
+                    "mandatory": true,
+                    "mainField": false,
+                    "rules": [
+                    ],
+                    "listName": "habitattypes",
+                    "referenceInfo": null,
+                    "choiceFilter": null,
+                    "label": {
+                        "en": "breeding source type",
+                        "ar": "نوع مصدر التوالد"
+                    },
+                    "calculation": null,
+                    "defaultValue": null,
+                    "section": "breedingSources",
+                    "path": "breedingSources.brredingSourceType",
+                    "fields": [
+                    ]
+                },
+                {
+                    "order": 5,
+                    "name": "length",
+                    "description": null,
+                    "type": "SelectOne",
+                    "mandatory": true,
+                    "mainField": false,
+                    "rules": [
+                    ],
+                    "listName": "dimenssions",
+                    "referenceInfo": null,
+                    "choiceFilter": null,
+                    "label": {
+                        "en": "length",
+                        "ar": "الطول"
+                    },
+                    "calculation": null,
+                    "defaultValue": null,
+                    "section": "breedingSources",
+                    "path": "breedingSources.length",
+                    "fields": [
+                    ]
+                },
+                {
+                    "order": 6,
+                    "name": "width",
+                    "description": null,
+                    "type": "SelectOne",
+                    "mandatory": true,
+                    "mainField": false,
+                    "rules": [
+                    ],
+                    "listName": "dimenssions",
+                    "referenceInfo": null,
+                    "choiceFilter": null,
+                    "label": {
+                        "en": "width",
+                        "ar": "العرض"
+                    },
+                    "calculation": null,
+                    "defaultValue": null,
+                    "section": "breedingSources",
+                    "path": "breedingSources.width",
+                    "fields": [
+                    ]
+                },
+                {
+                    "order": 7,
+                    "name": "depth",
+                    "description": null,
+                    "type": "SelectOne",
+                    "mandatory": true,
+                    "mainField": false,
+                    "rules": [
+                    ],
+                    "listName": "depthdimenssions",
+                    "referenceInfo": null,
+                    "choiceFilter": null,
+                    "label": {
+                        "en": "depth",
+                        "ar": "العمق"
+                    },
+                    "calculation": null,
+                    "defaultValue": null,
+                    "section": "breedingSources",
+                    "path": "breedingSources.depth",
+                    "fields": [
+                    ]
+                },
+                {
+                    "order": 8,
+                    "name": "larvalStagePresent",
+                    "description": null,
+                    "type": "Boolean",
+                    "mandatory": true,
+                    "mainField": false,
+                    "rules": [
+                    ],
+                    "listName": null,
+                    "referenceInfo": null,
+                    "choiceFilter": null,
+                    "label": {
+                        "en": "larval Stage Present",
+                        "ar": "وجود الطور اليرقي"
+                    },
+                    "calculation": null,
+                    "defaultValue": null,
+                    "section": "breedingSources",
+                    "path": "breedingSources.larvalStagePresent",
+                    "fields": [
+                    ]
+                },
+                {
+                    "order": 10,
+                    "name": "modifications",
+                    "description": null,
+                    "type": "SelectOne",
+                    "mandatory": true,
+                    "mainField": false,
+                    "rules": [
+                    ],
+                    "listName": "modificationTypes",
+                    "referenceInfo": null,
+                    "choiceFilter": null,
+                    "label": {
+                        "en": "modifications",
+                        "ar": "نوع التدخل الهندسي"
+                    },
+                    "calculation": null,
+                    "defaultValue": null,
+                    "section": "breedingSources",
+                    "path": "breedingSources.modifications",
+                    "fields": [
+                    ]
+                },
+                {
+                    "order": 11,
+                    "name": "limitor_grams",
+                    "description": null,
+                    "type": "Number",
+                    "mandatory": true,
+                    "mainField": false,
+                    "rules": [
+                    ],
+                    "listName": null,
+                    "referenceInfo": null,
+                    "choiceFilter": null,
+                    "label": {
+                        "en": "limitor_grams",
+                        "ar": "مثبط نمو اليرقات (جم)"
+                    },
+                    "calculation": null,
+                    "defaultValue": null,
+                    "section": "breedingSources",
+                    "path": "breedingSources.limitor_grams",
+                    "fields": [
+                    ]
+                },
+                {
+                    "order": 12,
+                    "name": "temphos_ml",
+                    "description": null,
+                    "type": "Number",
+                    "mandatory": true,
+                    "mainField": false,
+                    "rules": [
+                    ],
+                    "listName": null,
+                    "referenceInfo": null,
+                    "choiceFilter": null,
+                    "label": {
+                        "en": "temphos_ml",
+                        "ar": "تيمفوس (مل)"
+                    },
+                    "calculation": null,
+                    "defaultValue": null,
+                    "section": "breedingSources",
+                    "path": "breedingSources.temphos_ml",
+                    "fields": [
+                    ]
+                },
+                {
+                    "order": 13,
+                    "name": "specimen_id",
+                    "description": null,
+                    "type": "Text",
+                    "mandatory": true,
+                    "mainField": false,
+                    "rules": [
+                    ],
+                    "listName": null,
+                    "referenceInfo": null,
+                    "choiceFilter": null,
+                    "label": {
+                        "en": "specimen_id",
+                        "ar": "رقم العينة"
+                    },
+                    "calculation": null,
+                    "defaultValue": null,
+                    "section": "breedingSources",
+                    "path": "breedingSources.specimen_id",
+                    "fields": [
+                    ]
+                }
+            ]
+        }
+    ],
+    "options": [
+        {
+            "listName": "workdays",
+            "name": "2",
+            "order": 2,
+            "label": {
+                "en": "2",
+                "ar": "2"
+            },
+            "properties": {
+                "pcode": null,
+                "itemfilter": "",
+                "itemvalue": ""
+            }
+        },
+        {
+            "listName": "habitattypes",
+            "name": "water_swamp",
+            "order": null,
+            "label": {
+                "en": "Water Swamp",
+                "ar": "مستنقع مائي"
+            },
+            "properties": {
+                "pcode": null,
+                "itemfilter": "",
+                "itemvalue": ""
+            }
+        },
+        {
+            "listName": "habitattypes",
+            "name": "pits_and_construction_foundations_man-made_water_storage_barriers",
+            "order": null,
+            "label": {
+                "en": "Pits And Construction Foundations Man Made Water Storage Barriers",
+                "ar": "حفر واساسات بناء  حواجز تخزين مياه من صنع الانسان"
+            },
+            "properties": {
+                "pcode": null,
+                "itemfilter": "",
+                "itemvalue": ""
+            }
+        },
+        {
+            "listName": "habitattypes",
+            "name": "exposed_water_tanks",
+            "order": null,
+            "label": {
+                "en": "Exposed Water Tanks",
+                "ar": "خزانات مياه مكشوفة"
+            },
+            "properties": {
+                "pcode": null,
+                "itemfilter": "",
+                "itemvalue": ""
+            }
+        },
+        {
+            "listName": "habitattypes",
+            "name": "banks_of_streams",
+            "order": null,
+            "label": {
+                "en": "Banks Of A Stream (Valley)",
+                "ar": "ضفاف مجرى مائي (وادي)"
+            },
+            "properties": {
+                "pcode": null,
+                "itemfilter": "",
+                "itemvalue": ""
+            }
+        },
+        {
+            "listName": "depthdimenssions",
+            "name": "lessThanHalfMeter",
+            "order": null,
+            "label": {
+                "en": "Less Than Half Meter",
+                "ar": "أقل من نصف متر"
+            },
+            "properties": {
+                "pcode": null,
+                "itemfilter": "",
+                "itemvalue": ""
+            }
+        },
+        {
+            "listName": "dimenssions",
+            "name": "oneToTenMeters",
+            "order": null,
+            "label": {
+                "en": "One To Ten Meters",
+                "ar": "واحد إلى عشرة أمتار"
+            },
+            "properties": {
+                "pcode": null,
+                "itemfilter": "",
+                "itemvalue": ""
+            }
+        },
+        {
+            "listName": "habitattypes",
+            "name": "pond",
+            "order": null,
+            "label": {
+                "en": "Pond",
+                "ar": "بركة"
+            },
+            "properties": {
+                "pcode": null,
+                "itemfilter": "",
+                "itemvalue": ""
+            }
+        },
+        {
+            "listName": "workdays",
+            "name": "1",
+            "order": 1,
+            "label": {
+                "en": "1",
+                "ar": "1"
+            },
+            "properties": {
+                "pcode": null,
+                "itemfilter": "",
+                "itemvalue": ""
+            }
+        },
+        {
+            "listName": "interventiontypes",
+            "name": "modification",
+            "order": null,
+            "label": {
+                "en": "modification",
+                "ar": "تدخل هندسي"
+            },
+            "properties": {
+                "pcode": null,
+                "itemfilter": "",
+                "itemvalue": ""
+            }
+        },
+        {
+            "listName": "dimenssions",
+            "name": "LessThanOneMeter",
+            "order": null,
+            "label": {
+                "en": "Less Than One Meter",
+                "ar": "أقل من متر"
+            },
+            "properties": {
+                "pcode": null,
+                "itemfilter": "",
+                "itemvalue": ""
+            }
+        },
+        {
+            "listName": "interventiontypes",
+            "name": "larvicideSpraying",
+            "order": null,
+            "label": {
+                "en": "larvicideSpraying",
+                "ar": "رش مبيد اليرقات"
+            },
+            "properties": {
+                "pcode": null,
+                "itemfilter": "",
+                "itemvalue": ""
+            }
+        },
+        {
+            "listName": "modificationTypes",
+            "name": "NoModification",
+            "order": 3,
+            "label": {
+                "en": "NoModification",
+                "ar": "لا شيئ"
+            },
+            "properties": {
+                "pcode": null,
+                "itemfilter": "",
+                "itemvalue": ""
+            }
+        },
+        {
+            "listName": "modificationTypes",
+            "name": "permanent",
+            "order": 1,
+            "label": {
+                "en": "Permanent",
+                "ar": "دائم (ردم-ازالة)"
+            },
+            "properties": {
+                "pcode": null,
+                "itemfilter": "",
+                "itemvalue": ""
+            }
+        },
+        {
+            "listName": "workdays",
+            "name": "3",
+            "order": 3,
+            "label": {
+                "en": "3",
+                "ar": "3"
+            },
+            "properties": {
+                "pcode": null,
+                "itemfilter": "",
+                "itemvalue": ""
+            }
+        },
+        {
+            "listName": "modificationTypes",
+            "name": "temporary",
+            "order": 2,
+            "label": {
+                "en": "Temporary",
+                "ar": "مؤقت (تصريف للمياه)"
+            },
+            "properties": {
+                "pcode": null,
+                "itemfilter": "",
+                "itemvalue": ""
+            }
+        },
+        {
+            "listName": "workdays",
+            "name": "4",
+            "order": 4,
+            "label": {
+                "en": "4",
+                "ar": "4"
+            },
+            "properties": {
+                "pcode": null,
+                "itemfilter": "",
+                "itemvalue": ""
+            }
+        },
+        {
+            "listName": "depthdimenssions",
+            "name": "greaterThan2Meters",
+            "order": null,
+            "label": {
+                "en": "Greater Than2 Meters",
+                "ar": "أكبر من 2 متر"
+            },
+            "properties": {
+                "pcode": null,
+                "itemfilter": "",
+                "itemvalue": ""
+            }
+        },
+        {
+            "listName": "workdays",
+            "name": "5",
+            "order": 5,
+            "label": {
+                "en": "5",
+                "ar": "5"
+            },
+            "properties": {
+                "pcode": null,
+                "itemfilter": "",
+                "itemvalue": ""
+            }
+        },
+        {
+            "listName": "depthdimenssions",
+            "name": "halfTo2Meters",
+            "order": null,
+            "label": {
+                "en": "Half To2 Meters",
+                "ar": "نصف إلى 2 متر"
+            },
+            "properties": {
+                "pcode": null,
+                "itemfilter": "",
+                "itemvalue": ""
+            }
+        },
+        {
+            "listName": "workdays",
+            "name": "6",
+            "order": 6,
+            "label": {
+                "en": "6",
+                "ar": "6"
+            },
+            "properties": {
+                "pcode": null,
+                "itemfilter": "",
+                "itemvalue": ""
+            }
+        },
+        {
+            "listName": "dimenssions",
+            "name": "GreaterThan10Meters",
+            "order": null,
+            "label": {
+                "en": "Greater Than10 Meters",
+                "ar": "أكثر من 10 أمتار"
+            },
+            "properties": {
+                "pcode": null,
+                "itemfilter": "",
+                "itemvalue": ""
+            }
+        }
+    ],
+    "orgUnits": [
+    ],
+    "label": {
+        "en": "Larval Source Management",
+        "ar": "استمارة المكافحة اليرقية"
+    },
+    "displayName": "المكافحة اليرقية-قائد الفريق",
+    "translations": [
+    ]
+}
