@@ -56,14 +56,7 @@ This is a good time to describe how the current DataRun setup manages the campai
 
 ### Dashboard Setup
 
-...
-
----
-
-More details and challenges faced will be included in future posts...
-
-
-
+NMCP needs not just to show the data as dashboard, they also want the data in different formats and structures, they have different types of audiance each needs to have part of the data in a particular structure, I created a dashboard and a pentaho transformation pipeline that fetch the data from the api apply different transformations, and dispatch the data in a suitable format.
 
 
 
