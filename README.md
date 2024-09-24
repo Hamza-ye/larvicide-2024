@@ -54,11 +54,15 @@ This is a good time to describe how the current DataRun setup manages the campai
 - [Team Form Template](team-form-template.json)
 - [Supervisor Form Template](supervisor-form-template.json)
 
-### Dashboard Setup
+![image](images/GIF-240924_234550.gif)
 
-NMCP needs not just to show the data as dashboard, they also want the data in different formats and structures, they have different types of audiance each needs to have part of the data in a particular structure, I created a dashboard and a pentaho transformation pipeline that fetch the data from the api apply different transformations, and dispatch the data in a suitable format.
+### Dashboard Setup and Back-end API enhancement needed:
 
+NMCP not only needs to visualize data in dashboards but also requires the data in different formats and structures. They have various audiences, and each group needs the data presented in specific ways. I created a Power BI dashboard and set up a Pentaho transformation pipelines that fetches data from the API, applies different transformations, and dispatches the data in suitable formats.
 
+| ![Image1](https://github.com/user-attachments/assets/a72c811e-d195-4d02-bd5b-bee6c01d0e8c) | ![Image2](https://github.com/user-attachments/assets/bc491d80-58b1-41dc-a8f0-e35b107b729a) |
+|:-------------------------:|:-------------------------:|
 
-
+#### Difficulties Faced:
+Querying the API wasn’t flexible enough to meet all the requirements. For example, when I needed data for a specific administrative level (e.g., districts, level=2), I had to fetch all the data and filter it manually by level. Initially, I thought about adding a simple filter argument for `level` in the controller. But then, I realized I also needed to filter by parent-level entities, related entity properties, or other dynamic properties.
 
